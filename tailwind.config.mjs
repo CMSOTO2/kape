@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -7,6 +9,9 @@ export default {
                 "kape-green": "#4b6158",
                 "kape-beige": "#eeebe2",
                 "kape-black": "#0A0A0A",
+            },
+            fontFamily: {
+                sans: ['"Roboto"', ...defaultTheme.fontFamily.sans],
             },
         },
     },
