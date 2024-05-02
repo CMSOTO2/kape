@@ -6,6 +6,7 @@ export default {
             colors: {
                 "kape-green": "#4b6158",
                 "kape-beige": "#eeebe2",
+                "kape-black": "#0A0A0A",
             },
         },
     },
