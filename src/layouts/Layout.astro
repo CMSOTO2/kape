@@ -2,6 +2,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
+import FollowUs from "../components/FollowUs.astro";
 
 interface Props {
     title: string;
@@ -24,6 +25,7 @@ const { title } = Astro.props;
     <body>
         <Header />
         <slot />
+        <FollowUs/>
         <Footer />
     </body>
 </html>
