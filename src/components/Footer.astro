@@ -7,44 +7,60 @@ import location from '../images/location.svg'
 ---
 
 <footer class="px-3 bg-kape-black">
-    <div class="flex flex-col">
-        <div class="py-12">
+    <div class="flex flex-col max-w-[1200px] mx-auto">
+        <div class="py-12 md:flex md:justify-between md:pb-0">
             <!-- Brand Container -->
             <div class="flex flex-col items-center mb-12">
                 <Image src={kapeLogo} alt={'Kape Cafe Logo'} class='mb-6' loading='lazy'/>
                 <p class="text-white opacity-70 text-center text-sm">Asian-Inspired Cafe in Ohio</p>
             </div>
-            <!-- Links Container -->
-            <ul class="text-white flex flex-col gap-8 items-center mb-12">
-                <!-- Todo add link hrefs -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Our Story</a></li>
-            </ul>
-            <!-- Socials Container -->
-            <div class="flex gap-6 justify-center mb-12">
-                <a href="#"><Image src={facebookLogo} alt={"Link to Kape Facebook"}/></a>
-                <a href="https://www.instagram.com/kapecoffee.co/" target="_blank"><Image src={instagramLogo} alt={"Link to Kape Instagram"}/></a>
-            </div>
+            <div>
+                <div class="md:flex md:gap-20">
+                    <!-- Links Container -->
+                    <ul class="text-white text-base flex flex-col gap-8 items-center mb-12 md:flex-row">
+                        <!-- Todo add link hrefs -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                    </ul>
+                    <!-- Socials Container -->
+                    <div class="flex gap-6 justify-center mb-12">
+                        <a href="#">
+                            <Image src={facebookLogo} alt={"Link to Kape Facebook"}/>
+                        </a>
+                        <a href="https://www.instagram.com/kapecoffee.co/" target="_blank">
+                            <Image src={instagramLogo} alt={"Link to Kape Instagram"}/>
+                        </a>
+                    </div>
+                </div>
             <!-- Locations Container -->
-            <div class="text-kape-beige flex flex-col items-center gap-8">
+            <div class="text-kape-beige text-lg flex flex-col items-center gap-8 md:flex-row md:gap-16">
                 <div>
                     <p>
                         FRI. 8a-1p @ The Branch
                     </p>
-                    <a href="http://" class="flex justify-center items-center gap-2"><span><Image src={location} alt={"FRI. 8a-1p @ The Branch google map link"}/></span>1636 Oak St</a>
+                    <a href="http://" class="flex justify-center items-center gap-2 md:justify-start">
+                        <span>
+                            <Image src={location} alt={"FRI. 8a-1p @ The Branch google map link"}/>
+                        </span>1636 Oak St
+                    </a>
                 </div>
                 <div>
                     <p>
                         SAT. 9a-3p @ Leisure Club
                     </p>
-                    <a href="http://" class="flex justify-center items-center gap-2"><span><Image src={location} alt={"SAT. 9a-3p @ Leisure Club google map link"}/></span>1610 Oak St</a>
+                    <a href="http://" class="flex justify-center items-center gap-2 md:justify-start">
+                        <span>
+                            <Image src={location} alt={"SAT. 9a-3p @ Leisure Club google map link"}/>
+                        </span>1610 Oak St
+                    </a>
                 </div>
+            </div>
             </div>
         </div>
         <!-- Privacy Policy Container -->
-        <div class="max-w-[1200px] mx-auto pt-8 pb-6 text-white text-sm flex flex-col gap-4 text-center border-t-[1px] border-t-white border-opacity-10 md:flex-row md:gap-0 md:justify-between">
+        <div class="pt-8 pb-6 text-white text-sm flex flex-col gap-4 text-center border-t-[1px] border-t-white border-opacity-10 md:flex-row md:gap-0 md:justify-between">
             <p class="opacity-70">Privacy Policy</p>
             <p class="opacity-50">&copy; 2024 Kape Coffee - All rights preserved.</p>
         </div>
