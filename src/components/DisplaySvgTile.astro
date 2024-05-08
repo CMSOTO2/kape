@@ -1,0 +1,33 @@
+---
+import type { ImageMetadata } from "astro";
+import Image from "astro/components/Image.astro";
+
+interface Props {
+    iconSrc: ImageMetadata,
+    iconAlt: string,
+    imageSrc: ImageMetadata,
+    imageAlt: string,
+    title: string,
+    href: string,
+    isReversed?: boolean
+}
+
+const { 
+    iconSrc,
+    title, 
+    iconAlt, 
+    href, 
+    imageSrc, 
+    imageAlt,
+    isReversed
+} = Astro.props;
+---
+<div class=`bg-[#0E1312] hover:bg-kape-green transition-all ease-in duration-250 flex ${isReversed ? 'flex-row-reverse' : ''}`>
+    <a href={href} class=`w-1/2 flex flex-col ${isReversed ? 'items-start' : 'items-end'} p-8`>
+        <span><Image src={iconSrc} alt={iconAlt} height={80} width={80}/></span>
+        <h4 class="text-kape-beige text-2xl mt-3">{title}</h4>
+    </a>
+    <div class="w-1/2">
+        <Image src={imageSrc} alt={imageAlt} class="h-full"/>
+    </div>
+</div>

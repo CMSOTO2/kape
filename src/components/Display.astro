@@ -1,0 +1,28 @@
+---
+import DisplaySvgTile from "./DisplaySvgTile.astro";
+import pourOver from '../images/pour-over.svg'
+import coffee from '../images/coffee.svg'
+import espresso from '../images/espresso.svg'
+import watch from '../images/watch.svg'
+import latte2 from '../images/latte2.jpg'
+import lemonade from '../images/lemonade.jpg'
+import latteCinnamon from '../images/latte-cinnamon.jpg'
+import watchLatte from '../images/watch-latte.jpg'
+
+
+const SVGS = {
+    POUR_OVER: pourOver,
+    COFFEE: coffee,
+    ESPRESSO: espresso,
+    WATCH: watch
+}
+---
+
+<section class="bg-[#0E1312]">
+    <div class="max-w-[1440px] mx-auto">
+        <DisplaySvgTile title="Pour Over" iconSrc={SVGS.POUR_OVER} iconAlt="Pour Over" href="#" imageSrc={latte2} imageAlt=""/>
+        <DisplaySvgTile title="Our Story" iconSrc={SVGS.WATCH} iconAlt="Our Story" href="#" imageSrc={watchLatte} imageAlt="" isReversed/>
+        <DisplaySvgTile title="Espressos" iconSrc={SVGS.ESPRESSO} iconAlt="Espressos" href="#" imageSrc={latteCinnamon} imageAlt=""/>
+        <DisplaySvgTile title="Specialties" iconSrc={SVGS.COFFEE} iconAlt="Pour Over" href="#" imageSrc={lemonade} imageAlt="" isReversed/>
+    </div>
+</section>

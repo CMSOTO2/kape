@@ -6,8 +6,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                "kape-green": "#4b6158",
-                "kape-beige": "#eeebe2",
+                "kape-green": "#4B6158",
+                "kape-beige": "#EEEBE2",
                 "kape-black": "#0A0A0A",
                 "kape-gray": "#242424",
                 "kape-orange": "#F4A259"
