@@ -22,6 +22,7 @@ const {
     isReversed
 } = Astro.props;
 ---
+
 <div class=`bg-[#0E1312] hover:bg-kape-green transition-all ease-in duration-250 flex ${isReversed ? 'flex-row-reverse' : ''}`>
     <a href={href} class=`w-1/2 flex flex-col ${isReversed ? 'items-start' : 'items-end'} p-8`>
         <span><Image src={iconSrc} alt={iconAlt} height={80} width={80}/></span>
